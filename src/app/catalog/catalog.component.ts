@@ -1,15 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { CatalogService } from '../services/catalog.service';
+import { CatalogItemModel } from '../models/catalog.model';
 
 @Component({
   selector: 'app-catalog',
   templateUrl: './catalog.component.html',
-  styleUrls: ['./catalog.component.scss']
+  styleUrls: ['./catalog.component.scss'],
 })
-export class CatalogComponent implements OnInit {
+export class CatalogComponent implements OnInit, OnDestroy {
 
-  constructor() { }
+  public list: CatalogItemModel[] = [];
+  private subscription;
+  public searchText = '';
+
+  constructor(private catalogService: CatalogService) {
+  }
+
 
   ngOnInit() {
+    this.subscription = this.catalogService.getList()
+      .subscribe(data => this.list = data);
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
 }

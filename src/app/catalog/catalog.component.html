@@ -1,3 +1,50 @@
-<p>
-  catalog works!
-</p>
+<div class="row">
+  <form class="col">
+    <input type="text" [(ngModel)]="searchText" placeholder="Search text"
+           name="searchText">
+  </form>
+</div>
+
+<ul class="catalogList">
+  <li class="card" *ngFor="let item of list | filter: searchText">
+    <div class="image-wrap">
+      <img [src]=item.image alt="image"/>
+    </div>
+    <div class="title-wrap">
+      <div class="place">{{ item.place }}</div>
+      <div class="title"><a href="#">{{ item.title }}</a></div>
+    </div>
+    <div class="description">
+      <div class="row">
+        <div class="col">
+          Сложность:
+        </div>
+        <div class="col">
+          {{ item.level }}
+        </div>
+      </div>
+      <div class="term row">
+        <div class="col">
+          Длительность:
+        </div>
+        <div class="col">
+          {{ item.term }}
+        </div>
+      </div>
+      <div class="date row">
+        <div class="col">
+          Ближайшая дата:
+        </div>
+        <div class="col">
+          {{ item.date | date : 'dd MMMM y' }}
+        </div>
+      </div>
+    </div>
+    <div class="footer row">
+      <div class="price col"> {{item.price }}</div>
+      <div class="col">
+        <button class="btn btn-more">Подробнее</button>
+      </div>
+    </div>
+  </li>
+</ul>
