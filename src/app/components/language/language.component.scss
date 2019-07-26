@@ -1,0 +1,12 @@
+@import '../../theme';
+
+select {
+  background: transparent;
+  border: 1px solid gray;
+  color: $link-color;
+  padding: 6px 12px;
+
+  option {
+    background: $header-bg;
+  }
+}

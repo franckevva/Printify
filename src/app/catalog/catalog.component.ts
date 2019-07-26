@@ -1,6 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { CatalogService } from '../services/catalog.service';
 import { CatalogItemModel } from '../models/catalog.model';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-catalog',
@@ -13,13 +14,19 @@ export class CatalogComponent implements OnInit, OnDestroy {
   private subscription;
   public searchText = '';
 
-  constructor(private catalogService: CatalogService) {
+  constructor(private catalogService: CatalogService,
+              private translate: TranslateService) {
   }
 
 
   ngOnInit() {
-    this.subscription = this.catalogService.getList()
+    this.catalogService.getList(this.translate.currentLang)
       .subscribe(data => this.list = data);
+
+    this.subscription = this.translate.onLangChange.subscribe(translate => {
+      this.catalogService.getList(translate.lang)
+        .subscribe(data => this.list = data);
+    });
   }
 
   ngOnDestroy() {

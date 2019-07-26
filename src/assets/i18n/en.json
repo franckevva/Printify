@@ -1,0 +1,18 @@
+{
+  "HOME": {
+    "TITLE": "Hello Angular with ngx-translate!",
+    "SELECT": "Change language"
+  },
+  "NAV": {
+    "CATALOG": "Catalog",
+    "ABOUT": "About",
+    "EXPECTATIONS": "Expectations"
+  },
+  "CATALOG": {
+    "SEARCH_TOUR": "Find your tour",
+    "LEVEL": "Level",
+    "TERM": "Number of day",
+    "CLOSE_DATE": "Nearest date",
+    "MORE": "More"
+  }
+}

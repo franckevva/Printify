@@ -1,0 +1,18 @@
+{
+  "HOME": {
+    "TITLE": "Привет!",
+    "SELECT": "Выбери язык"
+  },
+  "NAV": {
+    "CATALOG": "Каталог туров",
+    "ABOUT": "Обо мне",
+    "EXPECTATIONS": "Expectations"
+  },
+  "CATALOG": {
+    "SEARCH_TOUR": "Найди свой тур",
+    "LEVEL": "Сложность",
+    "TERM": "Длительность",
+    "CLOSE_DATE": "Ближайшая дата",
+    "MORE": "Подробнее"
+  }
+}

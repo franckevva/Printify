@@ -1,33 +1,5 @@
 @import "./theme";
 
-header {
-  background: $header-bg;
-  display: flex;
-  flex-direction: column;
-}
-
-.tabPanel {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  max-width: $width-max;
-
-
-  .tab {
-    display: block;
-    padding: 0.5rem 1rem;
-    a {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: $link-color;
-
-      &:hover {
-        text-decoration: underline;
-        color: $link-color-active;
-      }
-    }
-  }
-}
 
 main {
   max-width: $width-max;
