@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "title": "Whale Cove Tour to the Shantar Islands with a throw on a car ",
+      "place": "Shantar Islands",
+      "level": 3,
+      "term": "11 days",
+      "date": "10-26-2019",
+      "price": 13500,
+      "image": "shantarskie"
+    },
+    {
+      "title": "7 treasures of the bear state. Summer journey to Kamchatka",
+      "place": "Kamchatka",
+      "level": 2,
+      "term": "10 days",
+      "date": "29-06-2019",
+      "price": 164000,
+      "image": "kamchatka"
+    },
+    {
+      "title": "Week from Svalbard to Grumant. Summer in Svalbard",
+      "place": "Svalbard",
+      "level": 2,
+      "term": "8 days",
+      "date": "29-07-2019",
+      "price": "119000",
+      "image": "spitxbergen-i-pyramida"
+    },
+    {
+      "title": "Grand crossing of Baikal.\nWinter trekking across the lake",
+      "place": "Lake Baikal",
+      "level": 4,
+      "term": "7 days",
+      "date": "3-03-2020",
+      "price": "79 753",
+      "image": "antarktida"
+    },
+    {
+      "title": "Above the clouds. Climbing Elbrus in 7 days",
+      "place": "Caucasus",
+      "level": 5,
+      "term": "7 days",
+      "date": "05-06-2020",
+      "price": "950",
+      "image": "elbrus"
+    },
+    {
+      "title": "Russia: from West to East. TransSiberian Challenge",
+      "place": "Siberia",
+      "level": 1,
+      "term": "17 days",
+      "date": "11-11-2019",
+      "price": "3300",
+      "image": "siberia"
+    },
+    {
+      "title": "In the polar bear's kingdom. West Svalbard & Polar ice edge",
+      "place": "Svalbard",
+      "level": 2,
+      "term": "10 days",
+      "date": "13-09-2019",
+      "price": "4764",
+      "image": "shpitcbergen"
+    },
+    {
+      "title": "Winter Kamchatka. Active tour in the Russian Far East",
+      "place": "Kamchatka",
+      "level": 2,
+      "term": "10 days",
+      "date": "13-09-2019",
+      "price": "82719",
+      "image": "kamchatka_dog"
+    }
+  ]
+}

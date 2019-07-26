@@ -41,6 +41,7 @@ li.card {
 
   .title-wrap {
     padding: 0.5rem 1rem;
+    min-height: 100px;
   }
 
   .title a {
@@ -48,6 +49,7 @@ li.card {
     font-size: 1.2rem;
     color: $text-color;
     text-decoration: none;
+
     &:hover {
       text-decoration: underline;
     }
@@ -77,9 +79,11 @@ li.card {
 
 form {
   margin: 1rem 0 -1rem -1rem;
+
   label {
     margin-right: 1rem;
   }
+
   .input-text {
     padding: 6px 10px;
   }

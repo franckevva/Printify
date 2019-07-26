@@ -11,7 +11,7 @@
 <ul class="catalogList">
   <li class="card" *ngFor="let item of list | filter: searchText">
     <div class="image-wrap">
-      <img [src]=item.image alt="image"/>
+      <img [src]="'/assets/images/'+item.image + '.jpg'" alt="image"/>
     </div>
     <div class="title-wrap">
       <div class="place">{{ item.place }}</div>
@@ -39,7 +39,7 @@
           {{'CATALOG.CLOSE_DATE' | translate}}:
         </div>
         <div class="col">
-          {{ item.date | date : 'dd MMMM y' }}
+          {{ item.date }}
         </div>
       </div>
     </div>
