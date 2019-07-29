@@ -9,7 +9,7 @@
 </div>
 
 <ul class="catalogList">
-  <li class="card" *ngFor="let item of list | filter: searchText">
+  <li class="card" *ngFor="let item of list$ | async | filter: searchText">
     <div class="image-wrap">
       <img [src]="'/assets/images/'+item.image + '.jpg'" alt="image"/>
     </div>

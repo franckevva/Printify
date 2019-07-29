@@ -33,6 +33,10 @@ header {
         text-decoration: underline;
         color: $link-color-active;
       }
+
+      &.active {
+        text-decoration: underline;
+      }
     }
   }
 }

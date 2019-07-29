@@ -17,18 +17,14 @@ export class LanguageComponent {
       code: 'ru',
       name: 'Русский',
     },
-    {
-      code: 'by',
-      name: 'Беларускі'
-    }
   ];
 
   constructor(public translate: TranslateService) {
-    translate.addLangs(['en', 'ru', 'by']);
+    translate.addLangs(['en', 'ru']);
     translate.setDefaultLang('en');
 
     const browserLang = translate.getBrowserLang();
-    translate.use(browserLang.match(/en|ru|by/) ? browserLang : 'en');
+    translate.use(browserLang.match(/en|ru/) ? browserLang : 'en');
   }
 
 }
